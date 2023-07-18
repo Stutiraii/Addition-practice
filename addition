@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class bool {
     public static void main (String []args){
-        int number1 = (int)(System.currentTimeMillis()%10);
-        int number2 = (int)(System.currentTimeMillis()/10% 10);
+        int number1 = (int)(Math.random()*10);
+        int number2 = (int)(Math.random()*10);
+
+     System.out.println("what is "+ number1 + "+" + number2 +"?");
 
         Scanner a = new Scanner(System.in);
-
-        System.out.println("what is "+ number1 + "+" + number2 +"?");
         int answer = a.nextInt();
         System.out.println(
                 number1 +" + "+ number2 +" = " + answer + " is "+
